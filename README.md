@@ -1,6 +1,6 @@
 # A typing game
 
-### its a typing game that inspiard by Piano Tiles. you can set youtube link to play music
+### It's a typing game inspired by Piano Tiles. You can set a YouTube link to play music, a song, or a motivational speech.
 
 pip install pygame pytube pydub
 
