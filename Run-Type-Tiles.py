@@ -1,3 +1,5 @@
+#pip install pygame pytube pydub
+
 import pygame
 import random
 import time
