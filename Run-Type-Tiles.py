@@ -6,6 +6,10 @@ screen_height = 720
 remove_special_chars = True
 
 # pip install youtube-transcript-api pygame pytube pydub
+# Copyright (c) 2023 Kazi Ar Rafi. All rights reserved.
+# Distributed under the terms of the GNU General Public License v3 that can be
+# found in the LICENSE file.
+
 #################################################################################################################
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
@@ -169,7 +173,7 @@ while not game_over:
     score_text = font.render("Score: " + str(score), True, (255, 184, 108))
     screen.fill((68, 71, 90))
     screen.blit(score_text, (10, 10))
-    screen.blit(wpm_text, (850, 10))
+    screen.blit(wpm_text, (screen_width - 150, 10))
     pygame.display.update()
     if score < 0:
         game_over = True
