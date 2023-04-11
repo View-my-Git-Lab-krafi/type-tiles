@@ -49,22 +49,16 @@ with open('sub.txt', 'w') as file:
 
 word_list = [subtitles_text]
 word_list = subtitles_text.split(", ")
-print("a")
-print("as")
+
 
 if remove_special_chars:
     word_list = [re.sub(r'[^\w\s]', "", word) for word in word_list]
-print("a")
-print("as")
+
 print(word_list)
 lp = 0
 clock = pygame.time.Clock()
 last_key_time = pygame.time.get_ticks()
 start_time = None
-def calculate_wpm(time_elapsed, text_length):
-    minutes = time_elapsed / 60
-    wpm = text_length / 5 / minutes
-    return int(wpm)
 
 def choose_word():
     global lp
@@ -116,6 +110,7 @@ last_key_time = pygame.time.get_ticks()
 paused = False
 incorrect_input = False
 first_time = True
+wpm = 0
 while not game_over:
     if first_time == True:
         screen.fill((68, 71, 90))
@@ -153,32 +148,47 @@ while not game_over:
             if i >= len(current_word) or input_word[i] != current_word[i]:
                 incorrect_input = True
                 break
+        
         if pygame.time.get_ticks() - last_key_time > 2000 and not paused:
             pygame.mixer.music.pause()
             paused = True
+
+        time_elapsed = time.time() - last_input_time
+        wpm = int(len(input_word) / 5 / (time_elapsed / 60))
+        wpm_text = font.render("WPM: " + str(wpm), True, (85, 255, 255))
+        wpm_rect = wpm_text.get_rect(topleft=(screen_width - 150, 10))
+        pygame.draw.rect(screen, (68, 71, 90), wpm_rect)
+        screen.blit(wpm_text, (screen_width - 150, 10))
+        pygame.display.update()
         input_text_surf = input_font.render(input_word, True, (255, 85, 85) if incorrect_input else (80, 250, 123))
         input_rect = input_text_surf.get_rect(center=(screen_width/2, screen_height/2 + 50))
         screen.fill((81, 84, 111), input_rect)
         screen.blit(input_text_surf, input_rect)
         pygame.display.update()
+
         if input_word == current_word:
             correct_sound.play()
             score += 1
             break
+            
+        if not input_word:
+            last_key_time = pygame.time.get_ticks()
 
     time_elapsed = time.time() - last_input_time
     wpm = int(len(input_word) / 5 / (time_elapsed / 60))
-    wpm_text = font.render("WPM: " + str(wpm), True, (255, 255, 255))
+    wpm_text = font.render("Last WPM: " + str(wpm), True, (241, 250, 140))
     
+    #pygame.display.update()
+
     score_text = font.render("Score: " + str(score), True, (255, 184, 108))
     screen.fill((68, 71, 90))
     screen.blit(score_text, (10, 10))
-    screen.blit(wpm_text, (screen_width - 150, 10))
+    screen.blit(wpm_text, (screen_width - 225, 50)) 
     pygame.display.update()
     if score < 0:
         game_over = True
         break
-    
+
     if not paused:
         pygame.mixer.music.unpause()
     last_input_time = time.time()
