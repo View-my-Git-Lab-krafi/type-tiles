@@ -1,5 +1,3 @@
-#pip install pygame pytube pydub
-
 
 ytlink = "https://www.youtube.com/watch?v=MhQKe-aERsU"
 screen_width = 1280
@@ -7,7 +5,7 @@ screen_height = 720
 
 remove_special_chars = True
 
-
+# pip install youtube-transcript-api pygame pytube pydub
 #################################################################################################################
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
