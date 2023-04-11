@@ -1,4 +1,3 @@
-
 # A typing game
 
 ### It's a typing game inspired by Piano Tiles. You can set a YouTube link to play music, a song, or a motivational speech.
@@ -38,3 +37,32 @@ python3 Run-Type-Tiles.py
 
 On Windows,
 python Run-Type-Tiles.py
+
+
+
+
+
+### License
+The GNU General Public License v3.0 applies to this project. Please consult the LICENSE file in the repository's root directory for further details.
+
+### Disclaimer
+While we consider the code in this repository is generally safe, it is supplied "unsplash krafi wallpaper generator" with no express or implied warranties. The authors of this code are not held accountable for any harm or liabilities incurred by the use or abuse of this code. By using this code, users are responsible for ensuring that they comply with all relevant laws, rules, or policies.
+
+It should be noted that this software does not require root access to execute, reducing the possibility of unintended consequences. None the less, by using this code, you consent to shouldering all costs and obligations connected with its use, and you agree to indemnify and keep the authors of this code blameless from any claims, damages, or other liabilities that may occur as a result of your use of this code.
+
+
+## Thank You
+Thank you for applying this code! We hope it is valuable to you and that you are going to employ it in your own projects.
+
+Please email me if you have any thoughts, problems, or recommendations for improvement. We respect your feedback and would appreciate hearing from you.
+
+I would also appreciate it if you could give us credit by mentioning or referring to our project in your own work. This allows us to continue creating and enhancing this code while also allowing other people to find it.
+
+Thank you for your continued support and for selecting our code!
+
+# ** deep documentation on my website !**
+
+- [ ] [www.krafi.info](https://www.krafi.info)
+
+
+# Have a great Life, thank you for using 
