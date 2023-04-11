@@ -25,19 +25,22 @@ Type Tiles has multiple levels that gradually increase in difficulty. In level 1
 Conclusion
 Type Tiles is a fun and engaging typing game that is designed to help you improve your typing speed and accuracy. With features like real-time feedback, English subtitle typing, and multiple levels, Type Tiles is a great tool for anyone looking to develop their typing skills. Try it out today and see can you can improve your typing !
 
-"Thanks to my assistant ChatGPT for always helping."
 
 
 
-
+```
 pip install youtube-transcript-api pygame pytube pydub
+```
 
 On linux ,
+```
 python3 Run-Type-Tiles.py
+```
 
 On Windows,
+```
 python Run-Type-Tiles.py
-
+```
 
 
 
@@ -46,9 +49,12 @@ python Run-Type-Tiles.py
 The GNU General Public License v3.0 applies to this project. Please consult the LICENSE file in the repository's root directory for further details.
 
 ### Disclaimer
-While we consider the code in this repository is generally safe, it is supplied "unsplash krafi wallpaper generator" with no express or implied warranties. The authors of this code are not held accountable for any harm or liabilities incurred by the use or abuse of this code. By using this code, users are responsible for ensuring that they comply with all relevant laws, rules, or policies.
+While we consider the code in this repository is generally safe, it is supplied with no express or implied warranties. The authors of this code are not held accountable for any harm or liabilities incurred by the use or abuse of this code. By using this code, users are responsible for ensuring that they comply with all relevant laws, rules, or policies.
 
 It should be noted that this software does not require root access to execute, reducing the possibility of unintended consequences. None the less, by using this code, you consent to shouldering all costs and obligations connected with its use, and you agree to indemnify and keep the authors of this code blameless from any claims, damages, or other liabilities that may occur as a result of your use of this code.
+
+"Thanks to my assistant ChatGPT for always helping."
+
 
 
 ## Thank You
