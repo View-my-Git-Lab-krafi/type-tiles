@@ -1,5 +1,4 @@
 
-
 ytlink = "https://www.youtube.com/watch?v=bq7caidfUts"
 screen_width = 1280
 screen_height = 720
@@ -187,8 +186,8 @@ while not game_over:
         font = pygame.font.SysFont(None, 48)
         first_print = font.render("Welcome to Run-Type-Tiles,", True, (255, 255, 255))
         screen.blit(first_print, (screen_width / 2 - first_print.get_width() / 1, screen_height / 8 - first_print.get_height() / 2))
-        first_printt = font.render("Visit Krafi.info to Learn more", True, (255, 255, 255))
-        screen.blit(first_printt, (screen_width / 2 - first_printt.get_width() / 4, screen_height / 5 - first_printt.get_height() / 2))
+        #first_printt = font.render("Visit Krafi.info to Learn more", True, (255, 255, 255))
+        #screen.blit(first_printt, (screen_width / 2 - first_printt.get_width() / 4, screen_height / 5 - first_printt.get_height() / 2))
         first_time = False
 
     ########################################################
