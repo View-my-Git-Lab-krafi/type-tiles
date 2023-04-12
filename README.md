@@ -4,6 +4,16 @@
 
 ##### Type Tiles is a typing game that is inspired by Piano Tiles. Besides seeing a motivating lecture or listening to your favorite music, it is an enjoyable and entertaining strategy for improving your typing speed. With Type Tiles, you can set a YouTube link to play music or any other video content, and the game will adjust the pace of the tiles based on the rhythm of the music.
 
+# Do you want to play this game?
+
+## On linux 
+Here is the Bin format [Click here](https://drive.google.com/file/d/1dgcf28I7uZ6pA7EiYkn8ksuLnbw6gB1g/view?usp=sharing)
+
+## On windows
+Here is the Bin format [Click here](https://drive.google.com/file/d/1VUsLeqsocYaWnmE3UqSsh3glnRwmmVzL/view?usp=share_link) 
+
+Recommended to run as administrator.
+
 Features
 Type Tiles comes with the following features:
 
@@ -26,22 +36,18 @@ Conclusion
 Type Tiles is a fun and engaging typing game that is designed to help you improve your typing speed and accuracy. With features like real-time feedback, English subtitle typing, and multiple levels, Type Tiles is a great tool for anyone looking to develop their typing skills. Try it out today and see can you can improve your typing !
 
 
-
+## Wana build ?
 
 ```
-pip install youtube-transcript-api pygame pytube pydub
+
+pip3 install youtube-transcript-api pygame pytube pydub tkinter 
+
+on windows you may install FFmpeg also,
 ```
 
-On linux ,
 ```
 python3 Run-Type-Tiles.py
 ```
-
-On Windows,
-```
-python Run-Type-Tiles.py
-```
-
 
 
 
