@@ -9,6 +9,11 @@
 ## On linux 
 Here is the Bin format [Click here](https://drive.google.com/file/d/1dgcf28I7uZ6pA7EiYkn8ksuLnbw6gB1g/view?usp=sharing)
 
+```
+sudo chmod +x typogame
+./ typogame
+
+```
 ## On windows
 Here is the Bin format [Click here](https://drive.google.com/file/d/1VUsLeqsocYaWnmE3UqSsh3glnRwmmVzL/view?usp=share_link) 
 
