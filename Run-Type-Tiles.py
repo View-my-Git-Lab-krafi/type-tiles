@@ -1,15 +1,138 @@
+import tkinter as tk
+from tkinter import ttk
 
+# Define the Dracula color scheme
+dracula_colors = {
+    "background": "#434659",
+    "foreground": "#f8f8f2",
+    "text": "#282a36",
+    "button_bg": "#44475a",
+    "button_fg": "#f8f8f2",
+    "entry_bg": "#44475a",
+    "entry_fg": "#000000",
+    "label_bg": "#f1fa8c",
+    "label_fg": "#282a36",
+    "checkbox_bg": "#282a36",
+    "checkbox_fg": "#f8f8f2",
+    "checkbox_highlight": "#44475a",
+}
+
+  #  "text": "#f8f8f2",
+ #   "comment": "#6272a4",
+ #   "cyan": "#8be9fd",
+ #   "green": "#50fa7b",
+ #   "orange": "#ffb86c",
+  #  "pink": "#ff79c6",
+  #  "purple": "#bd93f9",
+  #  "red": "#ff5555",
+  #  "yellow": "#f1fa8c",
+
+# Create the root window
+root = tk.Tk()
+root.geometry("700x550")
+root.configure(bg=dracula_colors["background"])
+
+# Set the Dracula theme for the widgets
+ttk_style = ttk.Style()
+
+# Set the colors for the various elements
+ttk_style.theme_create("dracula", parent="default")
+ttk_style.theme_settings("dracula", {
+    "TLabel": {"configure": {"background": dracula_colors["label_bg"], "foreground": dracula_colors["label_fg"]}},
+    "TButton": {"configure": {"background": dracula_colors["button_bg"], "foreground": dracula_colors["button_fg"]}},
+    "TEntry": {"configure": {"background": dracula_colors["entry_bg"], "foreground": dracula_colors["entry_fg"]}},
+    "TCheckbutton": {"configure": {"background": dracula_colors["checkbox_bg"], "foreground": dracula_colors["checkbox_fg"], "highlightbackground": dracula_colors["checkbox_highlight"]}},
+})
+ttk_style.theme_use("dracula")
+
+# Define the input fields and widgets
 ytlink = "https://www.youtube.com/watch?v=bq7caidfUts"
-screen_width = 1280
-screen_height = 720
-level = 0
-remove_special_chars = True
-AUTO_PAUSE_NO_TYPE = 2000
 
-# pip install youtube-transcript-api pygame pytube pydub
-# Copyright (c) 2023 Kazi Ar Rafi. All rights reserved.
-# Distributed under the terms of the GNU General Public License v3 that can be
-# found in the LICENSE file.
+####################################
+label1 = tk.Label(root, text="Welcome to Run-Type-Tiles", fg="white", bg="#44475a")
+label1.pack()
+label1 = tk.Label(root, text="Visit Krafi.info to Learn more", fg="white", bg="#44475a")
+label1.pack()
+###################################
+
+ytlink_label = ttk.Label(root, text="YouTube Link", font=("Helvetica", 24), anchor="center")
+ytlink_label.pack(fill="x", padx=200, pady=10)
+
+ytlink_entry = ttk.Entry(root, width=40)
+ytlink_entry.insert(0, ytlink)
+ytlink_entry.pack()
+
+
+
+screen_width_label = ttk.Label(root, text="Screen Width", anchor="center")
+screen_width_entry = ttk.Entry(root)
+screen_width_entry.insert(0, "1280")
+
+screen_width_label.pack(fill="x", padx=300, pady=5)
+screen_width_entry.pack(fill="x", padx=330, pady=5)
+
+screen_height_label = ttk.Label(root, text="Screen Height", anchor="center")
+screen_height_label.pack( fill="x", padx=300, pady=5)
+
+screen_height_entry = ttk.Entry(root)
+screen_height_entry.insert(0, "720")
+screen_height_entry.pack(fill="x", padx=330, pady=5)
+
+
+level_label = ttk.Label(root, text="Level", anchor="center")
+level_label.pack(fill="x", padx=300, pady=5)
+
+level_entry = ttk.Entry(root)
+level_entry.insert(0, "0")
+level_entry.pack(fill="x", padx=340, pady=5, anchor="center")
+
+remove_special_chars = True
+remove_special_chars_var = tk.BooleanVar(value=True)
+
+remove_special_chars_label = ttk.Label(root, text="Remove Special Characters", anchor="center")
+remove_special_chars_label.pack(fill="x", padx=250, pady=5)
+remove_special_chars_var = tk.BooleanVar(value=remove_special_chars)
+remove_special_chars_checkbox = tk.Checkbutton(root, variable=remove_special_chars_var)
+remove_special_chars_checkbox.pack()
+
+
+auto_pause_no_type_label = ttk.Label(root, text="Auto Pause No Type", anchor="center")
+auto_pause_no_type_label.pack(fill="x", padx=250, pady=5)
+auto_pause_no_type_entry = ttk.Entry(root)
+auto_pause_no_type_entry.insert(0, "2000")
+auto_pause_no_type_entry.pack(fill="x", padx=330, pady=5, anchor="center")
+
+def save_settings():
+    global ytlink, screen_width, screen_height, level, remove_special_chars, AUTO_PAUSE_NO_TYPE
+    
+    ytlink = ytlink_entry.get()
+    screen_width = int(screen_width_entry.get())
+    screen_height = int(screen_height_entry.get())
+    level = int(level_entry.get())
+    remove_special_chars = remove_special_chars_var.get()
+    AUTO_PAUSE_NO_TYPE = int(auto_pause_no_type_entry.get())
+    
+    print("Remove Special Characters:", remove_special_chars)
+    
+    root.destroy()
+
+save_button = tk.Button(root, text="Run game", command=save_settings)
+ytlink_label.pack()
+ytlink_entry.pack()
+screen_width_label.pack()
+screen_width_entry.pack()
+screen_height_label.pack()
+screen_height_entry.pack()
+level_label.pack()
+level_entry.pack()
+remove_special_chars_label.pack()
+remove_special_chars_checkbox.pack()
+auto_pause_no_type_label.pack()
+auto_pause_no_type_entry.pack()
+save_button.pack()
+root.mainloop()
+
+
 
 
 ###################################################
