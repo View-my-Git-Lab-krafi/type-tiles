@@ -19,8 +19,20 @@ Here is the Bin format [Click here](https://drive.google.com/file/d/1VUsLeqsocYa
 
 Recommended to run as administrator.
 
+
+## Finding web version of this Game ?
+Here is the web version of my game. 
+**Please note that you may experience lag due to your internet connection.**
+** To play this game, you must turn on the sound. Check the bottom-right corner of the Game window.**
+
+
+_recommended for pc user , mac ,Linux, windows , Chromebook_
+_If you still want to play on your Android or Apple device, you can connect an external keyboard. However, please note that this may not provide the best user experience._
+
+https://replit.com/@krafi-info/Type-Tiles-Game-1?v=1 [Click Here](https://replit.com/@krafi-info/Type-Tiles-Game-1?v=1)
 Features
-Type Tiles comes with the following features:
+
+# Type Tiles comes with the following features:
 
 1. YouTube Integration
 Type Tiles allows you to set a YouTube link to play music or any other video content. you can change the speed of the tiles in accordance with the beat of the music, creating a fun and difficult experience.
