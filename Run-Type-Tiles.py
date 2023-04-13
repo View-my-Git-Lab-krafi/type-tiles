@@ -71,7 +71,7 @@ ttk_style.theme_settings(
 ttk_style.theme_use("dracula")
 
 # Define the input fields and widgets
-ytlink = "https://www.youtube.com/watch?v=bq7caidfUts"
+ytlink = "https://www.youtube.com/watch?v=XpCurm2Ip5w"
 
 ####################################
 label1 = tk.Label(root,
