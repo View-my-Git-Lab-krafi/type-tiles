@@ -30,9 +30,11 @@ _recommended for pc user , mac ,Linux, windows , Chromebook_
 _If you still want to play on your Android or Apple device, you can connect an external keyboard. However, please note that this may not provide the best user experience._
 
 https://replit.com/@krafi-info/Type-Tiles-Game-1?v=1 [Click Here](https://replit.com/@krafi-info/Type-Tiles-Game-1?v=1)
-Features
 
-# Type Tiles comes with the following features:
+
+# Features
+
+ Type Tiles comes with the following features:
 
 1. YouTube Integration
 Type Tiles allows you to set a YouTube link to play music or any other video content. you can change the speed of the tiles in accordance with the beat of the music, creating a fun and difficult experience.
