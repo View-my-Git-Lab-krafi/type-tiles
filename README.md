@@ -1,3 +1,5 @@
+** Please note that this project is maintained on GitLab, and you can find the latest version of the code, as well as updates and bug fixes, at [https://gitlab.com/krafi/type-tiles.git](https://gitlab.com/krafi/type-tiles.git) , If you encounter any issues while using the application, we encourage you to report them on the GitLab repository so that we can address them as soon as possible. **
+
 # A typing game
 
 ### It's a typing game inspired by Piano Tiles. You can set a YouTube link to play music, a song, or a motivational speech.
